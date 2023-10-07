@@ -1,7 +1,8 @@
+/* question :
+    quelle est la méthode appelée lorsqu'on écrit bibli dans l'instruction  println("les ouvrages sont : \n$bibli")
+*/
+
 fun main(args: Array<String>) {
-    /*val v1=Livre("Le cid", "corneille", 11, 245)
-    val v2=Livre("Le cid", "corneille", 11, 245)
-    println(v1==v2)*/
 
     val bibli = Bibliotheque()
 

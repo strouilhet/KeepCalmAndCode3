@@ -1,3 +1,8 @@
+/* question :
+    où est le constructeur ?
+    combien cette classe a-t-elle d'attributs ?
+*/
+
 class Bibliotheque {
     private val lesOuvrages: MutableList<Ouvrage> = mutableListOf()
 
@@ -22,7 +27,7 @@ class Bibliotheque {
 
     /**
      * ajouter un ouvrage à la bibliothèque
-     * @param ouv
+     * @param ouv ouvrage à ajouter
      */
     fun ajouterOuvrage(ouv: Ouvrage) {
         lesOuvrages.add(ouv)
@@ -30,12 +35,11 @@ class Bibliotheque {
 
     /**
      * retourner les titres des ouvrages d'un auteur
-     * @param auteur
-     * @return les titres de l'auteur demandé
+     * @param auteur nom de l'auteur dont on cherche les titres
+     * @return la lsite des titres de l'auteur demandé
      */
     fun getTitres(auteur: String): MutableList<String> {
         val liste:MutableList<String> = mutableListOf()
-
         for (ouv in lesOuvrages) {
             if (ouv.auteur == auteur)
                 liste.add(ouv.titre)
